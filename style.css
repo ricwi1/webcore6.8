@@ -1,0 +1,46 @@
+@import url('https://webfonts.pro/base-web-fonts/sans-serif-grotesque/897-tt-lakes.html');
+body{
+    font-face:897-tt-lakes;
+}
+.header{
+    display:flex;
+    height:88px;
+    width:320px;
+    gap:30px;
+    margin:30px;
+}
+.header_divider__visiable{
+    display:none;
+}
+.header_text{
+    display:none;
+}
+.header_icons{
+    display:none;
+}
+
+@media (min-width:768px) {
+    .header_icons{
+        display:flex;
+        gap:30px;
+        margin-left: 250px;
+    }
+    .header_divider__visiable{
+        display:flex;
+    }
+    .header > * {
+        order: 0;
+    }
+   .header_divider {
+        order: 3;
+    }
+    .header_repair {
+        order: 4;
+    }
+    .header_search {
+        order: 5;
+    }
+}
+@media (min-width:1120px){
+    
+}
