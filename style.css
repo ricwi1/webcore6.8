@@ -1,46 +1,70 @@
-@import url('https://webfonts.pro/base-web-fonts/sans-serif-grotesque/897-tt-lakes.html');
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+} 
 body{
-    font-face:897-tt-lakes;
+    font-family:"TT Lakes", sans-serif;
 }
 .header{
-    display:flex;
-    height:88px;
-    width:320px;
-    gap:30px;
-    margin:30px;
+    display: flex;
+    height: 88px;
+    padding:5px;
+    justify-content: space-around;
+    align-items: center;
 }
-.header_divider__visiable{
+.header_divider__for768{
+    display:none;
+}
+.header_icon__for768{
     display:none;
 }
 .header_text{
     display:none;
 }
-.header_icons{
-    display:none;
+.header_divider{
+    height:40px;
 }
-
+.header_icon, .header_repair, .header_checkstatus{
+    width:40px;
+    height:40px;
+}
+.header_logo{
+    height:51px;
+}
 @media (min-width:768px) {
-    .header_icons{
+    .header_icon__for768{
         display:flex;
-        gap:30px;
-        margin-left: 250px;
+        margin-left: 200px;
+        gap:20px;
     }
-    .header_divider__visiable{
+    .header_divider__for768{
         display:flex;
+        height:40px;
     }
-    .header > * {
-        order: 0;
-    }
-   .header_divider {
-        order: 3;
-    }
-    .header_repair {
-        order: 4;
-    }
-    .header_search {
-        order: 5;
+    .header_divider{
+        display:none;
     }
 }
 @media (min-width:1120px){
-    
+    .header{
+        float:right;
+    }
+    .header_text{
+        display:flex;
+        margin-right: 10px;
+    }
+    .header_icon, .header_divider__for768, .header_logo{
+        display:none;
+    }
+    .header_repair, .header_checkstatus{
+        margin-right: 10px;
+}
 }
