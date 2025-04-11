@@ -65,6 +65,7 @@ body{
     overflow-x: auto;
     white-space: nowrap;
     padding-inline-start: 5px;
+    margin-bottom: 0px;
 
 }
 .container_menu::-webkit-scrollbar {
@@ -81,6 +82,14 @@ body{
      border-radius:6px;
      border:2px solid #B8FFEC;
 }
+.container_text__for320{
+    padding:0 16px;
+    margin: 0px;
+    font-size: 15px;
+}
+.container_text__for768{
+    display:none;
+}
 @media (min-width:768px) {
     .header_icon__for768{
         display:flex;
@@ -92,6 +101,14 @@ body{
         height:40px;
     }
     .header_divider{
+        display:none;
+    }
+    .container_text__for768{
+        display:block;
+        font-size: 15px;
+        padding:0 16px;
+    }
+    .container_text__for1120{
         display:none;
     }
 }
@@ -111,5 +128,8 @@ body{
     }
     .container {
       border-top: 1px solid #F8F8F8 ;
+    }
+    .container_text__for1120{
+        display:inline;
     }
 }
