@@ -108,5 +108,8 @@ body{
     }
     .header_repair, .header_checkstatus{
         margin-right: 10px;
-}
+    }
+    .container {
+      border-top: 1px solid #F8F8F8 ;
+    }
 }
