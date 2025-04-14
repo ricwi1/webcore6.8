@@ -153,6 +153,7 @@ header>.header_icon:first-child,.header_checkstatus{
 @media (min-width:1120px){
     .header{
         float:right;
+        width:50%;
         background-color: #F8F8F8;
     }
     .header_text{
@@ -168,16 +169,17 @@ header>.header_icon:first-child,.header_checkstatus{
         margin-right: 10px;
     }
     .container {
-      border-top: 1px solid #F8F8F8 ;
-    }
-    .container_text__for1120{
-        display:inline;
-    }
-    .container_menu{
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .container_menu{
-    width:100%;
-    }
+        border-top: 1px solid #F8F8F8 ;
+
+      }
+      .container_text__for1120{
+          display:inline;
+      }
+      .container_menu{
+          display: flex;
+          flex-flow: row wrap;
+      }
+      .container_menu{
+      width:100%;
+      }
 }
