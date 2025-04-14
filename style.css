@@ -22,11 +22,11 @@ body{
     display: flex;
     height: 88px;
     padding:5px;
-    justify-content: space-around;
+    width:100%;
     align-items: center;
 }
-.header_icon:first-child, .header_repair{
-    margin-right: 16px;
+header>.header_icon:first-child,.header_checkstatus{
+    margin:0 16px;
 }
 .header_divider__for768{
     display:none;
@@ -39,7 +39,7 @@ body{
 }
 .header_divider{
     height:40px;
-    margin: 0 16px;
+    margin: 0 auto;
 }
 .header_icon, .header_repair, .header_checkstatus{
     width:40px;
@@ -114,7 +114,7 @@ body{
 
     .header_icon__for768{
         display:flex;
-        margin-left: auto;
+        margin-left:auto;
         gap:16px;
         margin-right:16px;
     }
@@ -157,7 +157,9 @@ body{
     }
     .header_text{
         display:flex;
-        margin-right: 10px;
+    }
+    .header_repair{
+        margin-left: 16px;
     }
     .header_icon, .header_divider__for768, .header_logo{
         display:none;
